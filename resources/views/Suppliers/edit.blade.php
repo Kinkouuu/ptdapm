@@ -10,7 +10,7 @@
         <form action="{{route('suppliers.update',$supplier->id)}}" method="POST">
             @method('PUT')
             <label for="">Tên nhà cung cấp</label>
-            <input type="text" name="name" value="{{$supplier->name}}">
+            <input type="text" name="name" value="{{$supplier->name}}" required>
             <button type="submit">Cập nhật</button>
             @csrf
         </form>

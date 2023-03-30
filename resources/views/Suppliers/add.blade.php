@@ -9,7 +9,7 @@
     @endif
         <form action="{{route('suppliers.store')}}" method="POST">
             <label for="">Tên nhà cung cấp</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
             <button type="submit">Thêm</button>
             @csrf
         </form>
